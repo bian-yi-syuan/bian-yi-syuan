@@ -63,10 +63,58 @@ I continuously study software architecture, database design, development workflo
 
 # 📱 Featured Projects
 
-🚧 Coming Soon...
+## Quantaflow
 
-- PDF Invoice Generator
-- AI Photo Trip Coach
+A SwiftUI-based iOS application for creating business quotation documents quickly and professionally.
+
+Quantaflow helps users enter quotation details, generate PDF documents, export Excel files, print with AirPrint, and share files directly from iPhone.
+
+### Key Features
+
+- Create professional quotation documents
+- Generate PDF files
+- Export Excel / XLSX files
+- Share documents from iPhone
+- Print with AirPrint
+- Multi-language UI support
+
+### Tech Stack
+
+Swift / SwiftUI / PDFKit / UIKit / Excel Export / AirPrint
+
+### Repository
+
+https://github.com/bian-yi-syuan/Quantaflow
+
+
+---
+
+## MeetingFlow AI
+
+An AI-powered meeting workflow app currently in development.
+
+MeetingFlow AI is designed to support business meetings by recording audio, generating transcripts, summarizing key points, extracting action items, and sharing the final meeting summary with company members by email.
+
+### Planned Features
+
+- Meeting audio recording
+- Speech-to-text transcription
+- Speaker identification
+- AI-generated meeting summaries
+- Key point extraction
+- Action item extraction
+- Email sharing to team members
+- Meeting history management
+- Secure API integration
+
+### Tech Direction
+
+Swift / SwiftUI / Speech Recognition / AI Workflow / Email Integration / Secure API Key Management
+
+### Status
+
+In Progress
+
 
 ---
 
