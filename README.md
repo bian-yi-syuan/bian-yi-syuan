@@ -2,23 +2,13 @@
 
 ## 🇹🇼 Mobile & Web Application Developer from Taiwan
 
-### 🇯🇵 日本語
+台湾出身のモバイル・Webアプリケーション開発者です。  
+現在は日本でモバイルアプリ開発を中心に学びながら、SwiftUI、Android、Web、データベース、UI/UX設計を組み合わせた実用的なアプリケーション制作に取り組んでいます。
 
-台湾出身のモバイル・Webアプリケーション開発者です。
+前職では UI デザイナーとして Web・モバイル画面設計に携わってきました。  
+その経験を活かし、見た目の美しさだけでなく、使いやすさ・実装しやすさ・保守しやすさを意識したアプリ開発を目指しています。
 
-UI/UXデザインの経験を活かし、使いやすく実用的なアプリケーションの開発を目指しています。
-
-現在はソフトウェアアーキテクチャ、データベース設計、開発ワークフロー、設計手法について継続的に研究・改善しています。
-
----
-
-### 🇺🇸 English
-
-I'm a Mobile & Web Application Developer from Taiwan.
-
-I focus on building modern mobile and web applications with clean UI, practical architecture, and maintainable development workflows.
-
-I continuously study software architecture, database design, development workflows, and engineering best practices.
+特に現在は、AI Workflow、業務効率化アプリ、モバイルUI、ローカルデータ管理、セキュアなAPI連携設計に関心があります。
 
 ---
 
@@ -29,6 +19,8 @@ I continuously study software architecture, database design, development workflo
 - SwiftUI
 - Java
 - Kotlin
+- iOS App Development
+- Android App Development
 
 ## 🌐 Web Development
 - PHP
@@ -39,9 +31,9 @@ I continuously study software architecture, database design, development workflo
 ## 🗄 Database
 - MySQL
 - SQL
-
-## 🤖 IoT Development
-- Arduino
+- Database Design
+- ERD
+- Primary Key / Foreign Key Design
 
 ## 🛠 Development Tools
 - Git
@@ -54,67 +46,110 @@ I continuously study software architecture, database design, development workflo
 
 ## 🚀 Engineering Skills
 - UI / UX Design
-- Mobile Application Architecture
+- SwiftUI App Architecture
+- Mobile Application Development
 - Web Application Development
 - REST API Integration
-- Development Workflow
+- Local Data Management
+- PDF / Excel Export
+- Speech Recognition
+- AI Workflow Design
+- Secure API Key Management
 
 ---
 
 # 📱 Featured Projects
 
-## Quantaflow
+## MeetingFlowAI
 
-A SwiftUI-based iOS application for creating business quotation documents quickly and professionally.
+AI会議ワークフロー支援アプリ。  
+録音、リアルタイム文字起こし、AI要約、ToDo管理、会議履歴管理を通じて、会議後の作業を効率化する iOS アプリです。
 
-Quantaflow helps users enter quotation details, generate PDF documents, export Excel files, print with AirPrint, and share files directly from iPhone.
+近年注目されている AI Workflow の考え方を取り入れ、単なる録音アプリではなく、会議後すぐに行動へ移せる情報を作ることを目的に開発しました。
+
+### Concept
+
+ユーザーは録音ボタンを押すだけで、会議音声を記録し、文字起こしを確認し、重要な内容や次回アクションを整理できます。  
+会議終了後に、議事録作成・ToDo抽出・履歴確認までを一つの流れで行えるように設計しています。
 
 ### Key Features
 
-- Create professional quotation documents
-- Generate PDF files
-- Export Excel / XLSX files
-- Share documents from iPhone
-- Print with AirPrint
-- Multi-language UI support
+- 会議音声の録音
+- 日本語 / 英語のリアルタイム文字起こし
+- 会議内容の文字起こし保存
+- 会議目的・決定事項・課題・次回アクションの整理
+- ToDo管理
+- 重要マーク機能
+- 会議履歴管理
+- 録音ファイルの保存・共有
+- 将来的なカレンダー連携・メール共有を想定した設計
 
 ### Tech Stack
 
-Swift / SwiftUI / PDFKit / UIKit / Excel Export / AirPrint
+Swift / SwiftUI / AVFoundation / Speech Framework / Network Framework / Local Storage / AI Workflow
+
+### Development Points
+
+- Apple Speech Framework を利用したリアルタイム文字起こし
+- AVFoundation による録音機能
+- 日本語ビジネス会議を想定した UI / UX
+- AI API Key をアプリ内に直接保存しない安全な設計
+- 将来的に Backend 経由で AI API と連携できる構成を想定
+
+### Repository
+
+https://github.com/bian-yi-syuan/MeetingFlowAI
+
+---
+
+## Quantaflow
+
+ビジネス見積書を iPhone で素早く作成できる SwiftUI アプリです。  
+見積内容を入力し、PDF 生成、Excel / XLSX 出力、AirPrint 印刷、ファイル共有まで行える業務支援アプリとして開発しました。
+
+### Concept
+
+紙やPCに依存しがちな見積書作成作業を、モバイル上でシンプルに完結できるようにすることを目的としています。  
+入力から出力、共有までの流れを一つのアプリ内で扱えるように設計しました。
+
+### Key Features
+
+- 見積書データの入力
+- PDFファイル生成
+- Excel / XLSXファイル出力
+- iPhoneからのファイル共有
+- AirPrint対応
+- 多言語UI対応
+- ローカルデータ管理
+
+### Tech Stack
+
+Swift / SwiftUI / PDFKit / UIKit / XLSX Export / AirPrint / Local Storage
+
+### Development Points
+
+- PDFKit を利用した帳票生成
+- iOS の共有機能との連携
+- Excel 出力機能の実装
+- 業務利用を想定したシンプルな UI 設計
 
 ### Repository
 
 https://github.com/bian-yi-syuan/Quantaflow
 
-
 ---
 
-## MeetingFlow AI
+# 🎯 Current Focus
 
-An AI-powered meeting workflow app currently in development.
+現在は以下の分野を中心に学習・開発しています。
 
-MeetingFlow AI is designed to support business meetings by recording audio, generating transcripts, summarizing key points, extracting action items, and sharing the final meeting summary with company members by email.
-
-### Planned Features
-
-- Meeting audio recording
-- Speech-to-text transcription
-- Speaker identification
-- AI-generated meeting summaries
-- Key point extraction
-- Action item extraction
-- Email sharing to team members
-- Meeting history management
-- Secure API integration
-
-### Tech Direction
-
-Swift / SwiftUI / Speech Recognition / AI Workflow / Email Integration / Secure API Key Management
-
-### Status
-
-In Progress
-
+- SwiftUI による iOS アプリ開発
+- Android アプリ開発
+- AI Workflow を活用した業務効率化アプリ
+- データベース設計
+- セキュアな API 連携
+- GitHub ポートフォリオ整備
+- UI / UX を意識したアプリ設計
 
 ---
 
