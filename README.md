@@ -31,9 +31,6 @@
 ## 🗄 Database
 - MySQL
 - SQL
-- Database Design
-- ERD
-- Primary Key / Foreign Key Design
 
 ## 🛠 Development Tools
 - Git
@@ -49,11 +46,11 @@
 - SwiftUI App Architecture
 - Mobile Application Development
 - Web Application Development
-- REST API Integration
-- Local Data Management
 - PDF / Excel Export
 - Speech Recognition
 - AI Workflow Design
+- Calendar Integration
+- Email Sharing
 - Secure API Key Management
 
 ---
@@ -63,14 +60,16 @@
 ## MeetingFlowAI
 
 AI会議ワークフロー支援アプリ。  
-録音、リアルタイム文字起こし、AI要約、ToDo管理、会議履歴管理を通じて、会議後の作業を効率化する iOS アプリです。
+録音、リアルタイム文字起こし、AI要約、ToDo管理、カレンダー連携、メール共有、会議履歴管理を通じて、会議後の作業を効率化する iOS アプリです。
 
 近年注目されている AI Workflow の考え方を取り入れ、単なる録音アプリではなく、会議後すぐに行動へ移せる情報を作ることを目的に開発しました。
 
 ### Concept
 
 ユーザーは録音ボタンを押すだけで、会議音声を記録し、文字起こしを確認し、重要な内容や次回アクションを整理できます。  
-会議終了後に、議事録作成・ToDo抽出・履歴確認までを一つの流れで行えるように設計しています。
+会議終了後には、AI要約、ToDo抽出、カレンダー登録、メール草稿作成、参加者への共有までを一つの流れで行えるように設計しています。
+
+会議を「記録して終わり」にせず、次の行動につながるワークフローへ変換することを重視しています。
 
 ### Key Features
 
@@ -78,22 +77,29 @@ AI会議ワークフロー支援アプリ。
 - 日本語 / 英語のリアルタイム文字起こし
 - 会議内容の文字起こし保存
 - 会議目的・決定事項・課題・次回アクションの整理
+- AI要約
 - ToDo管理
 - 重要マーク機能
+- ToDo期限のカレンダー連携
+- 会議内容のメール草稿生成
+- 参加者へのメール送信
 - 会議履歴管理
 - 録音ファイルの保存・共有
-- 将来的なカレンダー連携・メール共有を想定した設計
+- 会議データの分析
 
 ### Tech Stack
 
-Swift / SwiftUI / AVFoundation / Speech Framework / Network Framework / Local Storage / AI Workflow
+Swift / SwiftUI / AVFoundation / Speech Framework / Network Framework / SwiftData / Calendar Integration / Mail Sharing / Local Storage / AI Workflow
 
 ### Development Points
 
 - Apple Speech Framework を利用したリアルタイム文字起こし
 - AVFoundation による録音機能
+- 会議内容からToDo・決定事項・次回アクションを整理するワークフロー設計
+- ToDo期限をカレンダーと連携する機能
+- 会議内容をメール草稿として生成し、参加者へ共有できる機能
 - 日本語ビジネス会議を想定した UI / UX
-- AI API Key をアプリ内に直接保存しない安全な設計
+- API Key を iOS アプリ内に直接保存しない安全な設計
 - 将来的に Backend 経由で AI API と連携できる構成を想定
 
 ### Repository
@@ -146,6 +152,8 @@ https://github.com/bian-yi-syuan/Quantaflow
 - SwiftUI による iOS アプリ開発
 - Android アプリ開発
 - AI Workflow を活用した業務効率化アプリ
+- 音声認識・文字起こし機能
+- カレンダー連携・メール共有機能
 - データベース設計
 - セキュアな API 連携
 - GitHub ポートフォリオ整備
